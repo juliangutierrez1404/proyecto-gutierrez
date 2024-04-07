@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+        <!-- Bootstrap v.5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap v5.1.3 -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fabiana Lazzo</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">
+            Fabiana Lazzo
+        </h1>
+        <nav class="navBar">
+            <ul type="none">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="turnos.html">Turnos</a>
+                </li>
+                <li>
+                    <a href="cursos.html">Cursos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="turnos">
+        <h2 class="text-center pb-3">Completa el formulario para obtener un turno</h2>
+        <section class="form">
+            <form action="" class="formGrid">
+                <div class="formItem formItem1">
+                    <label for="nombre" class="formLabel">Nombre completo:</label>
+                    <input class="formInput" type="text" placeholder="Nombre completo" name="nombre" required>
+                </div>
+                <div class="formItem formItem2">
+                    <label for="email" class="formLabel">Correo electrónico:</label>
+                    <input class="formInput" type="text" placeholder="ejemplo@gmail.com" name="email" required>
+                </div>
+                <div class="formItem formItem3">
+                    <label for="apellido" class="formLabel">Apellido:</label>
+                    <input class="formInput" type="text" placeholder="Apellido" name="apellido" required>
+                </div>
+                <div class="formItem formItem4 selector">
+                    <label for="servicio">Elige tu servicio</label>
+                    <select name="servicio" id="" class="formInput form-select">
+                        <option value="">Microblading</option>
+                        <option value="">Micro-shading</option>
+                        <option value="">Shading powder</option>
+                        <option value="">Delineado de ojos</option>
+                        <option value="">Labios full color</option>
+                        <option value="">Peeling químico</option>
+                        <option value="">Limpieza facial express</option>
+                        <option value="">Limpieza facial premium</option>
+                        <option value="">Perfilado de cejas</option>
+                    </select>
+                </div>
+                <div class="formItem formItem5">
+                    <label for="numero" class="formLabel">Número de teléfono:</label>
+                    <input class="formInput" type="tel" placeholder="+54 9 1122334455" name="numero" required>
+                </div>
+                <div class="formItem formItem6 calendario">
+                    <label for="calendario" class="formLabel">Fecha y hora de tu turno:</label>
+                    <input class="calendario formInput" type="datetime-local" name="calendario" required>
+                </div>
+                <div class="formItem formItem7">
+                    <a href="#">Sacar turno</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>
+            Fabiana <br />
+            Lazzo
+        </h2>
+        <p>
+            @correoelectronico <br />
+            direccion <br />
+            derechos reservados
+        </p>
+    </footer>
+
+    <!-- Bootstrap v5.1.3 script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Bootstrap v5.1.3 script -->
+</body>
+</html>

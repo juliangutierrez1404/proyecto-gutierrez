@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Electrolize", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffcf97;
+}
+
+body a {
+    color: #ffffff;
+}
+
+/* index */
+
+.header {
+    height: 90px;
+    width: 100%;
+    background-color: #080808;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+}
+
+.logo {
+    height: 100%;
+    font-family: "Mate SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.navBar {
+    width: 70%;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navBar ul li {
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.aboutMe {
+    padding: 1rem 2rem;
+}
+
+.aboutMe h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.aboutMe div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem .2rem;
+}
+
+.aboutMe div p {
+    padding: 0 2rem;
+}
+
+.video {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.borderRadius {
+    padding: 10px;
+    background-color: #080808;
+    border-radius: .5rem;
+}
+
+.video p {
+    width: 70%;
+}
+
+.secondaryColor {
+    color: #ffcf97;
+}
+
+.titles {
+    background-image: url(../assets/backgroundImg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: .5rem 1rem 2rem 1rem;
+}
+
+.titles h2 {
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.titles div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.indexCarousel {
+    height: 200px;
+    width: 500px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.footer {
+    background-color: #080808;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+/* Index */
+
+/* Servicios */
+
+.servicios {
+    padding-top: 1rem;
+}
+
+.galeryImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.galery {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.imgSize {
+    background-color: #ffffff;
+    height: 250px;
+    width: 256px;
+}
+
+.descripcion {
+    display: block;
+    height: 60%;
+    width: 20%;
+    background-color: #363636;
+}
+
+.descripcion p{
+    text-align: center;
+    padding: 0px 2px;
+}
+
+/* Servicios */
+
+
+/* Turnos html */
+
+.turnos {
+    width: 100%;
+    height: 650px;
+    align-content: center;
+}
+
+.form {
+    margin-left: 20%;
+    background-color: #363636;
+    color: #ffffff;
+    width: 900px;
+    border-radius: 5px;
+}
+
+.formGrid {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 10px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 19px;
+    padding: 0px 5px;
+}
+
+.formItem label {
+    padding-bottom: 8px;
+}
+
+.formInput{
+    padding: 4px 3px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+.form-select option {
+    background-color: #080808;
+    color: #ffffff;
+}
+
+.formItem1 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+
+.formItem2 {
+    grid-column: 7/13;
+    grid-row: 1/2;
+}
+
+.formItem3 {
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+
+.formItem4 {
+    grid-column: 7/13;
+    grid-row: 2/3;
+}
+
+.formItem5 {
+    grid-column: 1/7;
+    grid-row: 3/4;
+}
+
+.formItem6 {
+    grid-column: 7/13;
+    grid-row: 3/5;
+    height: 100%;
+    align-self: stretch;
+}
+
+.formItem6 input {
+height: 100%;
+}
+
+.formItem7 {
+    text-align: center;
+    background-color: #bafff3;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    grid-column: 3/10;
+    grid-row: 5/6;
+}
+
+.formItem7 a {
+    line-height: 40px;
+    text-decoration: none;
+    color: #080808;
+    font-size: 18px;
+}
+
+/* Cursos.html */
+
+.cursoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bafff3;
+    border-radius: 15px;
+    height: 800px;
+    width: 550px;
+}
+
+.cursoCardImg {
+    height: 500px;
+    width: 500px;
+    padding-top: 20px;
+}
+
+.cursoCardText {
+    padding: 15px;
+    background-color: #080808;
+    color: #ffffff;
+    width: 500px;
+    height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cursoCardTitle{
+    font-size: 30px;
+}
+
+.cursoCardPh {
+    font-size: 20px;
+}
+
+.cursoCardBoton {
+    height: 30px;
+    width: 100%;
+}
+
+.cursoBoton {
+    background-color: #363636;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin-left: 90px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.cursoBoton:hover {
+    background-color: #f5f5f5;
+    color: #080808;
+}
+
+/* Contacto.html */
+
+.contactoFlex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.iconos {
+    margin-top: 30px;
+    background-color: #bafff3;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.icono {
+    border-bottom: 5px #080808;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono i {
+    font-size: 50px;
+}
+
+.icono p {
+    font-size: 25px;
+}
+
+.contactForm {
+    margin-bottom: 20px;
+    background-color: #bafff3;
+    height: 400px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.contactFormGrid {
+    padding: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3 ,1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+.contactInput1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.contactInput2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contactInput3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.contactInput4 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
