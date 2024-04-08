@@ -5,43 +5,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet" />
-    <!-- Bootstrap v.5.1.3 -->
+    <!-- Bootstrap v.5.3.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!-- Bootstrap v5.1.3 -->
+    <!-- Bootstrap v5.3.1 -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Fabiana Lazzo</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">Fabiana Lazzo</div>
-        <nav class="navBar">
-            <ul type="none">
-                <li>
-                    <a href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./pages/turnos.html">Turnos</a>
-                </li>
-                <li>
-                    <a href="./pages/cursos.html">Cursos</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!-- Inicia navbar BS 5.3.1 -->
+        <nav class="container-fluid navbar navbar-expand-md">
+            <div class="container-fluid navBar">
+                <a href="#" class="navbar-brand logo">Fabiana Lazzo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/servicios.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/turnos.html" class="nav-link">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/cursos.html" class="nav-link">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- Navbar fin BS 5.3.1 -->
     </header>
     <main>
         <section class="aboutMe">
-            <h2>Quien soy</h2>
+            <h2 class="mt-2 pt-1 pb-1">Quien soy</h2>
             <div>
-                <iframe class="borderRadius" src="https://www.youtube.com/watch?v=YdKl9YppXeY" frameborder="0"></iframe>
+                <img src="./assets/profile.jpg" alt="Fabiana Lazzo">
                 <p>
                     (Es un video que no funciona porque me tienen que pasar un video de
                     presentación, es una guia de que es un video acompañado de una
@@ -52,7 +65,7 @@
             </div>
         </section>
         <section class="titles">
-            <h2 class="secondaryColor">Títulos</h2>
+            <h2>Títulos</h2>
             <div>
                 <img class="borderRadius" src="./assets/certificado1.jpeg" alt="certificado 1" width="20%"
                     height="auto" />
@@ -62,45 +75,60 @@
                     height="auto" />
             </div>
         </section>
+        <h3 class="text-center galeriaTitle">Trabajos</h3>
         <!-- Inicia carosuel de Bootstrap -->
-        <div id="demo" class="carousel slide indexCarousel" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-            </div> 
-          
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/carousel1.jpeg" alt="Los Angeles" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/carousel2.jpeg" alt="Chicago" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/carousel3.jpeg" alt="New York" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/carousel4.jpeg" alt="New York" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/carousel5.jpeg" alt="New York" class="d-block w-100">
-              </div>
-            </div>
-          
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
+        <div class="carouselGrid">
+            <section class="indexCarousel">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div> 
+                  
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/carousel1.jpeg" alt="Los Angeles" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/carousel2.jpeg" alt="Chicago" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/carousel3.jpeg" alt="New York" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/carousel4.jpeg" alt="New York" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/carousel5.jpeg" alt="New York" class="d-block w-100">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
+            <div class="galeriaImg galeriaImg1 rounded"></div>
+            <div class="galeriaImg galeriaImg2"></div>
+            <div class="galeriaImg galeriaImg3"></div>
+            <div class="galeriaImg galeriaImg4"></div>
+            <div class="galeriaImg galeriaImg5"></div>
+            <div class="galeriaImg galeriaImg6"></div>
+            <div class="galeriaImg galeriaImg7"></div>
+            <div class="galeriaImg galeriaImg8"></div>
+            <div class="galeriaImg galeriaImg9"></div>
+            <div class="galeriaImg galeriaImg10"></div>
+        </div>
         <!-- Termina carousel de Bootstrap -->
     </main>
     <footer class="footer">
@@ -108,6 +136,17 @@
             Fabiana <br />
             Lazzo
         </h2>
+        <div class="icons">
+            <a href="https://wa.me/5491122627453" class="whatsapp" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/microbladinglomasdezamora/" class="instagram" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=100060406422001" class="facebook" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </div>
         <p>
             @correoelectronico <br />
             direccion <br />
