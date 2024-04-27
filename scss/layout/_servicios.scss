@@ -1,0 +1,59 @@
+.servicios {
+    padding: 1rem 0;
+
+        section {
+            padding-left: 20px;
+        }
+
+        h2 {
+            margin-left: 15%;
+            width: 70%;
+            text-align: center;
+            background-color: #61616165;
+            border: 3px solid $blanco;
+            border-radius: 5px;
+            color: $beige;
+            text-shadow: 2px 2px 5px $negro;
+        }
+}
+
+.card {
+    width: 400px;
+    background-color: $pastelBlue;
+
+        img {
+            max-height: 360px;
+        }
+
+        .card-body {
+            background-color: $negro;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            
+                .card-title {
+                    background-color: #f5f5f57e;
+                    border: 2px solid $negro;
+                    color: $beige;
+                    text-align: center;
+                    text-shadow: 2px 2px 5px $negro;
+                }
+
+                .card-text {
+                    color: $blanco;
+                }
+
+                a {
+                    background-color: $pastelBlue;
+                    transition: all 0.3s;
+                    width: 100%;
+                        &:hover {
+                            background-color: $beige;
+                            color: $negro;
+                            transform: scale(1.01);
+                        }
+                        &:active {
+                            background-color: #49867c8d;
+                        }
+                }
+        }
+}

@@ -1,0 +1,33 @@
+.footer {
+    background-color: $negro;
+    @include flex(row, space-between, center);
+    color: $blanco;
+    padding: 2rem 1rem;
+}
+
+.icons {
+    height: 50px;
+    width: 200px;
+    @include flex(row, space-between, center);
+
+    a {
+        font-size: 50px;
+        color: $beige;
+        transition: all 0.3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+    }
+}
+
+.whatsapp:hover {
+    color: #25d366;
+}
+
+.instagram:hover {
+    color: #a304a3;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}

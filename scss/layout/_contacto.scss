@@ -1,0 +1,72 @@
+.contactoFlex {
+    height: 100%;
+    width: 100%;
+    @include flex(column, center, center);
+    gap: 50px;
+    background-image: url(../../assets/backgroundImg.jpg);
+    background-size: cover;
+}
+
+.iconos {
+    margin-top: 30px;
+    background-color: $pastelBlue;
+    width: 50%;
+    border-radius: 10px;
+
+        .icono {
+            border-bottom: 5px $negro;
+            padding: 0px 5px;
+            @include flex(row, space-between, center);
+
+                i {
+                    font-size: 50px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+        }
+}
+
+.contactForm {
+    background-color: $pastelBlue;
+    height: 400px;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    @include grid(repeat(3, 1fr), repeat(2, 1fr));
+    align-items: center;
+    column-gap: 10px;
+    box-shadow: 2px 2px 10px $negro;
+
+    .contactInput1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .contactInput2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .contactInput3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .contactInput4 {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        height: 100%;
+    }
+
+    .sendBtn {
+        font-size: 20px;
+        color: $beige;
+        background-color: $negro;
+            &:hover {
+                color: $beige;
+                background-color: $grisOscuro;
+            }
+    }
+}

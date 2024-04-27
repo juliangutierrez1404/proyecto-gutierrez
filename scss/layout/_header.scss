@@ -1,0 +1,32 @@
+nav {
+    background-color: $grisOscuro;
+    div .logo {
+        margin-right: 25%;
+        height: 100%;
+        font-family: "Mate SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: .6rem;
+            &:hover {
+                color: #ffffff
+            }
+    }
+
+    div ul {
+        @include flex (row, center, flex-end);
+            .nav-link{
+                background-color: $beige;
+                margin: 1px 40px;
+                padding: 5px 0px;
+                border-radius: 8px;
+                border: 2px solid $grisOscuro;
+                transition: all 0.5s;
+                box-shadow: 0 0 10px $negro;
+                    &:hover {
+                        background-color: $pastelBlue;
+                    }
+            }
+    }
+}
