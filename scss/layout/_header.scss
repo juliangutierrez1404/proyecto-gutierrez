@@ -9,13 +9,16 @@ nav {
         font-size: 2rem;
         color: #ffffff;
         padding-top: .6rem;
+        transition: all 90ms;
             &:hover {
-                color: #ffffff
+                scale: (1.02);
+                color: $beige2;
+                transform: skew(10deg);
             }
     }
 
     div ul {
-        @include flex (row, center, flex-end);
+        @include flex (row, space-evenly, center);
             .nav-link{
                 background-color: $beige;
                 margin: 1px 40px;
@@ -25,7 +28,7 @@ nav {
                 transition: all 0.5s;
                 box-shadow: 0 0 10px $negro;
                     &:hover {
-                        background-color: $pastelBlue;
+                        background-color: $beige2;
                     }
             }
     }

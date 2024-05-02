@@ -16,10 +16,11 @@
 
 .form {
     margin-left: 15%;
-    background-color: $pastelBlue;
+    background-color: $beige2;
     color: $blanco;
     width: 900px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px $negro;
 
         .formGrid {
             @include grid(repeat(5, 100px), repeat(12, 1fr));

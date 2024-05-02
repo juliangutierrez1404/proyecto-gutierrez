@@ -5,6 +5,10 @@
     @include flex(column, center, center);
     border-radius: 5px;
     box-shadow: 1px 2px 10px $grisOscuro;
+    transition: all 2s;
+        &:hover {
+            box-shadow: 1px 2px 8px $grisOscuro inset;
+        }
 
         h2 {
             background-color: #61616165;
@@ -15,15 +19,27 @@
             width: 70%;
             color: $beige;
             text-shadow: 2px 2px 5px $negro;
+            transition: all 500ms;
+                &:hover {
+                    background-color: $grisOscuro;
+                    box-shadow: 1px 1px 5px $negro inset;
+                }
         }
 
         div {
             @include flex(row, center, center,);
             padding: .5rem .2rem;
-            background-color: $grisOscuro;
-            color: $blanco;
+            background-color: $beige2;
+            color: $negro;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
+            transition: background-color 100ms, color 100ms, scale 1s, transform 1s;
+                &:hover {
+                    scale: (1.05);
+                    background-color: $grisOscuro;
+                    color: $blanco;
+                    transform: translateY(-20px);
+                }
 
                 img {
                     height: 250px;
