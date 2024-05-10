@@ -1,28 +1,28 @@
 /*responsive index.html*/
 
-@media screen and (max-width: 1024px) {
-    .navBar a {
-        margin-right: 15%;
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .navBar .logo {
+        margin-right: 20%;
     }
 
-    nav div ul {
-        margin: 1px 15px;
+    .navBar div ul li a {
+        margin: 1px 18px;
         padding: 5px 0;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .navBar a {
-        margin-right: 4%;
+    .navBar .logo {
+        margin-right: 10%;
+    }
 
-            div ul li a {
-                margin: 1px 15px;
-                padding: 5px 0;
-            }
+    .navBar div ul li a {
+        margin: 1px 10px;
+        padding: 5px 0;
     }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 767px) {
     .navBar ul li a {
         width: 100px;
     }
@@ -190,8 +190,8 @@
     }
 
     .icons {
-        height: 50px;
-        width: 120px;
+        height: 3.125rem;
+        width: 7.5rem;
         @include flex(row, space-between, center);
 
             a {
@@ -202,15 +202,15 @@
 
 @media screen and (max-width: 375px) {
     .aboutMe {
-        margin: 20px 5%;
+        margin: 1.25rem 5%;
         width: 90%;
 
         div {
             @include flex(column, center,center);
 
                 img {
-                    height: 300px;
-                    width: 250px;
+                    height: 18.75rem;
+                    width: 15.625rem;
                 }
         }
     }
@@ -289,8 +289,8 @@
     }
 
     .icons {
-        height: 50px;
-        width: 100px;
+        height: 3.125rem;
+        width: 6.25rem;
         @include flex(row, space-between, center);
 
             a {
@@ -300,3 +300,44 @@
 }
 
 /*fin de index.html*/
+
+/*inicio de turnos.html*/
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .formGrid {
+            column-gap: 5px;
+            padding: 5px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .turnos h2 {
+        width: 75%;
+        font-size: 26px;
+    }
+
+
+    .formGrid {
+        column-gap: 5px;
+        padding: 5px 5px;
+
+            .formItem {
+                font-size: 18px;
+            }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .turnos h2 {
+        width: 65%;
+        font-size: 22px;
+    }
+
+    .form {
+        height: 80%;
+
+            .formGrid {
+                @include grid(repeat(5 ,1fr), repeat(1,1fr))
+            }
+    }
+}
