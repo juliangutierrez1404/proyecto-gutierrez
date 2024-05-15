@@ -100,7 +100,7 @@
 .carouselGrid {
     background-color: $grisOscuro;
     padding: 50px 25px;
-    max-width: 100%;
+    width: 100%;
     @include grid(repeat(4, 1fr), repeat(5, 1fr));
     grid-template-areas: 
     "carousel carousel img1 img9 img3"
@@ -136,7 +136,7 @@
 
 .galeriaImg1 {
     grid-area: img1;
-    background-image: url(../assets/galeriaImg1.jpeg);;
+    background-image: url(../assets/galeriaImg1.jpeg);
 }
 
 .galeriaImg2 {
