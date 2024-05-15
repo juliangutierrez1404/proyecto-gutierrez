@@ -14,8 +14,6 @@
     border-radius: 10px;
 
         .icono {
-            border-bottom: 5px $negro;
-            padding: 0px 5px;
             @include flex(row, space-between, center);
 
                 i {

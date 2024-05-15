@@ -1,6 +1,6 @@
 .turnos {
     width: 100%;
-    height: 650px;
+    height: 100%;
     align-content: center;
     background-image: url(../../assets/25729.jpg);
 
@@ -11,6 +11,7 @@
             text-shadow: 2px 2px 5px $negro;
             width: 80%;
             margin: auto;
+            margin-top: 8px;
         }
 }
 
@@ -27,6 +28,7 @@
             align-items: center;
             column-gap: 10px;
             padding: 10px 10px;
+            margin-bottom: 1rem;
 
                 .formItem {
                     display: flex;
