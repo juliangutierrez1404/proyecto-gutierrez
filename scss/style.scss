@@ -9,17 +9,18 @@
 
 body {
     background-image: url(../assets/25729.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
 @import "./mixins/mixins";
 @import "./variables/variables";
-@import "./layout/media";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/index";
 @import "./layout/servicios";
 @import "./layout/turnos";
 @import "./layout/cursos";
 @import "./layout/contacto";
+@import "./layout/media";
+@import "./layout/index";

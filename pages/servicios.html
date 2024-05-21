@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../assets/favicon.jpeg" type="image/x-icon" />
+    <!-- Inicia AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Termina AOS animation -->
+    <!-- inicia animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- termina animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,19 +39,21 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="../index.html" class="nav-link">Inicio</a>
+                            <a href="../index.html" class="animate__animated animate__flipInX nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Servicios</a>
+                            <a href="#"
+                                class="animate__animated animate__flipInX nav-link">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="turnos.html" class="nav-link">Turnos</a>
+                            <a href="./turnos.html" class="animate__animated animate__flipInX nav-link">Turnos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="cursos.html" class="nav-link">Cursos</a>
+                            <a href="./cursos.html" class="animate__animated animate__flipInX nav-link">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contacto.html" class="nav-link">Contacto</a>
+                            <a href="./contacto.html"
+                                class="animate__animated animate__flipInX nav-link">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -55,103 +63,167 @@
     <main class="servicios">
         <h2 class="textCenter">Servicios</h2>
         <section class="row gap-5 w-100">
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2 animate__animated animate__backInDown">
                 <img src="../assets/galeriaImg1.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
                     <h4 class="card-title">Microblading</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-                        provident perspiciatis dolorum sed, quod eligendi sint magni enim
-                        quidem nemo?
+                        El microblading es una técnica semipermanente de maquillaje que consiste en pigmentar la piel
+                        para crear la apariencia de cejas más densas y definidas. Incluye:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Consulta inicial</li>
+                        <li>Diseño personalizado de cejas</li>
+                        <li>Procedimiento de microblading</li>
+                        <li>Revisión de seguimiento</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2 animate__animated animate__backInDown">
                 <img src="../assets/galeriaImg2.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Microshading</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        El microshading es una técnica de maquillaje semipermanente que consiste en rellenar y definir
+                        las cejas utilizando una técnica de sombreado. incluye:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Consulta inicial y evaluación de cejas</li>
+                        <li>Diseño personalizado de cejas</li>
+                        <li>Procedimiento de microshading</li>
+                        <li>Revisión de seguimiento</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2 animate__animated animate__backInDown">
                 <img src="../assets/galeriaImg3.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Shading powder</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        Shading powder es ideal para dar a tus cejas un aspecto más completo y definido. Características
+                        del producto:
                     </p>
-                    <a href="#" class="btn btn">Mas info.</a>
+                    <ul>
+                        <li>Polvo suave y fácil de aplicar</li>
+                        <li>Proporciona un acabado natural y duradero</li>
+                        <li>Adecuado para diferentes tonos de cejas</li>
+                        <li>Incluye un aplicador de precisión</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaImg4.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Delineado de ojos</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        El servicio de delineado de ojos te ofrece la oportunidad de resaltar tu mirada de forma precisa
+                        y duradera. Características del servicio:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Delineado de ojos con técnica de precisión</li>
+                        <li>Uso de pigmentos de alta calidad</li>
+                        <li>Variedad de estilos disponibles: delineado clásico, cat eye, smokey eye, entre otros</li>
+                        <li>Resultado resistente al agua y de larga duración</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaImg5.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Labios full color</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        Labios full color es una técnica avanzada para realzar y definir tus labios de forma duradera.
+                        Características del servicio:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Diseño y personalización del color según tus preferencias</li>
+                        <li>Aplicación precisa y profesional por parte de expertos en dermopigmentación</li>
+                        <li>Resultados naturales y de larga duración</li>
+                        <li>Mayor definición y volumen para tus labios</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaimg6.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Peeling químico enzimático</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        El peeling químico enzimático es un tratamiento suave pero efectivo para renovar la piel y
+                        mejorar su textura. Características del servicio:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Formulado con enzimas naturales para exfoliar suavemente la piel</li>
+                        <li>Ayuda a reducir manchas, imperfecciones y líneas finas</li>
+                        <li>Estimula la regeneración celular para una piel más luminosa y fresca</li>
+                        <li>Adecuado para todo tipo de piel, incluso las más sensibles</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaImg7.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Limpieza facial premium</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        La limpieza facial profunda es un tratamiento esencial para mantener una piel saludable y
+                        radiante, este tratamiento dura 1 hora. Características del servicio:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Elimina impurezas, células muertas y exceso de grasa</li>
+                        <li>Desobstruye los poros para prevenir brotes de acné</li>
+                        <li>Exfolia suavemente para una piel más suave y luminosa</li>
+                        <li>Aplicación de mascarilla hidratante para revitalizar la piel</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaImg8.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
-                    <h4 class="card-title">Microblading</h4>
+                    <h4 class="card-title">Limpieza facial express</h4>
                     <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        quis repudiandae vero pariatur laudantium eligendi saepe aut
-                        obcaecati eveniet deleniti.
+                        La limpieza facial profunda es un tratamiento esencial para mantener una piel saludable y
+                        radiante, este tratamiento dura 30 minutos. Características del servicio:
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <ul>
+                        <li>Elimina impurezas, células muertas y exceso de grasa</li>
+                        <li>Desobstruye los poros para prevenir brotes de acné</li>
+                        <li>Exfolia suavemente para una piel más suave y luminosa</li>
+                        <li>Aplicación de mascarilla hidratante para revitalizar la piel</li>
+                    </ul>
+                    <p class="card-precio">
+                        $99999
+                    </p>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
-            <div class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
+            <div data-aos="flip-right" class="card col-12 col-md-6 col-xl-4 container pt-2 pb-2">
                 <img src="../assets/galeriaImg9.jpeg" alt="testImg" class="card-img-top" />
                 <div class="card-body">
                     <h4 class="card-title">Microblading</h4>
@@ -160,7 +232,7 @@
                         quis repudiandae vero pariatur laudantium eligendi saepe aut
                         obcaecati eveniet deleniti.
                     </p>
-                    <a href="#" class="btn">Mas info.</a>
+                    <a href="#" class="btn">Agendar cita</a>
                 </div>
             </div>
         </section>
@@ -187,15 +259,20 @@
             derechos reservados
         </p>
     </footer>
-
     <!-- Bootstrap v5.1.3 script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqrrighttLy"
         crossorigin="anonymous"></script>
     <!-- Bootstrap v5.1.3 script -->
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS Script -->
 </body>
 
 </html>

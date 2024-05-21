@@ -10,3 +10,9 @@
     grid-template-rows: $rows;
     grid-template-columns: $columns;
 }
+
+@mixin hover ($background, $color, $cursor) {
+    background-color: $background;
+    color: $color;
+    cursor: $cursor;
+}

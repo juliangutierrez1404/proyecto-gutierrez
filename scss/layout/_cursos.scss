@@ -2,12 +2,12 @@
     @include flex(column, center, center);
     background-color: $beige2;
     border-radius: 15px;
-    height: 800px;
+    height: 80%;
     width: 550px;
 
         .cursoCardImg {
             height: 500px;
-            width: 500px;
+            width: 90%;
             padding-top: 20px;
         }
 
@@ -15,10 +15,8 @@
             padding: 15px;
             background-color: $negro;
             color: $blanco;
-            width: 500px;
-            height: 300px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            width: 90%;
+            height: 20%;
 
                 .cursoCardTitle {
                     font-size: 30px;
@@ -30,23 +28,58 @@
         }
 
         .cursoCardBoton {
-            height: 20px;
-            width: 100%;
+            background-color: $negro;
+            width: 90%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-bottom: 20px;
+
+                h3 {
+                    color: $blanco;
+                    padding: 0 15px;
+                }
 
                 .cursoBoton {
+                    width: 30%;
                     background-color: $grisOscuro;
                     color: $blanco;
-                    text-decoration: none;
-                    padding: 20px 50px;
-                    margin-left: 90px;
+                    margin-left: 15px;
                     font-size: 20px;
-                    border-radius: 10px;
-                    transition: all 0.2s;
+                    padding: 13px;
+                    border-radius: 5px;
                         &:hover {
-                            background-color: #36363686;
+                            background-color: #f5f5f57e;
                             color: $beige;
-                            border: 2px solid #f5f5f57e;
                             text-shadow: 2px 2px 6px $negro;
+                        }
+                        &:active {
+                            background-color: $grisOscuro;
+                            color: $blanco;
+                        }
+                }
+
+                .accordion {
+                    margin: 10px 15px;
+
+                        .accordion-item h2 button {
+                            color: $blanco;
+                            background-color: $grisOscuro;
+                            font-size: 20px;
+                                &:hover {
+                                    color: $beige;
+                                    text-shadow: 2px 2px 6px $negro;
+                                }
+                                &:active {
+                                    color: $blanco;
+                                }
+                        }
+                }
+
+                .accordion-body {
+                    background-color: $grisOscuro;
+
+                        p {
+                            color: $blanco;
                         }
                 }
         }

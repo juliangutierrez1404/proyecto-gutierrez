@@ -27,16 +27,16 @@
         }
 
         div {
+            background-color: $grisOscuro;
             @include flex(row, center, center,);
             padding: .5rem .2rem;
-            background-color: $beige2;
-            color: $negro;
+            color: $blanco;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             transition: background-color 100ms, color 100ms, scale 1s, transform 1s;
                 &:hover {
                     scale: (1.05);
-                    background-color: $grisOscuro;
+                    background-color: $negro;
                     color: $blanco;
                     transform: translateY(-20px);
                 }
@@ -67,6 +67,11 @@
             text-align: center;
             padding-bottom: .5rem;
             text-shadow: 2px 2px 5px $negro;
+            transition: all 500ms;
+                &:hover {
+                    background-color: $grisOscuro;
+                    box-shadow: 1px 1px 5px $negro inset;
+                }
         }
 
         div {
@@ -95,6 +100,10 @@
     border-radius: 5px;
     border: solid 2px $blanco;
     box-shadow: 2px 2px 10px $grisOscuro;
+    transition: all 500ms;
+        &:hover {
+            background-color: $grisOscuro;
+        }
 }
 
 .carouselGrid {
@@ -136,50 +145,50 @@
 
 .galeriaImg1 {
     grid-area: img1;
-    background-image: url(../assets/galeriaImg1.jpeg);
+    background-image: url(../../assets/galeriaImg1.jpeg);
 }
 
 .galeriaImg2 {
     grid-area: img2;
-    background-image: url(../assets/galeriaImg2.jpeg);
+    background-image: url(../../assets/galeriaImg2.jpeg);
 }
 
 .galeriaImg3 {
     grid-area: img3;
-    background-image: url(../assets/galeriaImg3.jpeg);
+    background-image: url(../../assets/galeriaImg3.jpeg);
 }
 
 .galeriaImg4 {
     grid-area: img4;
-    background-image: url(../assets/galeriaImg4.jpeg);
+    background-image: url(../../assets/galeriaImg4.jpeg);
 }
 
 .galeriaImg5 {
     grid-area: img5;
-    background-image: url(../assets/galeriaImg5.jpeg);
+    background-image: url(../../assets/galeriaImg5.jpeg);
 }
 
 .galeriaImg6 {
     grid-area: img6;
-    background-image: url(../assets/galeriaImg6.jpeg);
+    background-image: url(../../assets/galeriaImg6.jpeg);
 }
 
 .galeriaImg7 {
     grid-area: img7;
-    background-image: url(../assets/galeriaImg7.jpeg);
+    background-image: url(../../assets/galeriaImg7.jpeg);
 }
 
 .galeriaImg8 {
     grid-area: img8;
-    background-image: url(../assets/galeriaImg8.jpeg);
+    background-image: url(../../assets/galeriaImg8.jpeg);
 }
 
 .galeriaImg9 {
     grid-area: img9;
-    background-image: url(../assets/galeriaImg9.jpeg);
+    background-image: url(../../assets/galeriaImg9.jpeg);
 }
 
 .galeriaImg10 {
     grid-area: img10;
-    background-image: url(../assets/galeriaImg10.jpeg);
+    background-image: url(../../assets/galeriaImg10.jpeg);
 }

@@ -14,11 +14,17 @@
             border-radius: 5px;
             color: $beige;
             text-shadow: 2px 2px 5px $negro;
+            transition: all 500ms;
+                &:hover {
+                    color: $blanco;
+                    background-color: $grisOscuro;
+                }
         }
 }
 
 .card {
     width: 400px;
+    height: 20%;
     background-color: $beige2;
 
         img {
@@ -36,10 +42,38 @@
                     color: $beige;
                     text-align: center;
                     text-shadow: 2px 2px 5px $negro;
+                    border-radius: 5px;
+                    transition: all 500ms;
+                        &:hover {
+                            background-color: $grisOscuro;
+                            color: $blanco;
+                            cursor: default;
+                        }
                 }
 
                 .card-text {
                     color: $blanco;
+                }
+
+                ul li {
+                    list-style: square;
+                    color: $blanco;
+                }
+
+                .card-precio {
+                    margin-bottom: 10px;
+                    text-align: center;
+                    width: 50%;
+                    font-size: 22px;
+                    color: $beige;
+                    background-color: #f5f5f57e;
+                    border-radius: 5px;
+                    transition: all 500ms;
+                        &:hover {
+                            cursor: default;
+                            background-color: $grisOscuro;
+                            color: $blanco;
+                        }
                 }
 
                 a {
