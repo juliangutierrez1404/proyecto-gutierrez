@@ -31,7 +31,7 @@
                 }
         }
 
-        .gris, .blanco, .beige{
+        .gris{
             background-color: $grisOscuro;
             @include flex(row, center, center,);
             padding: .5rem .2rem;
@@ -204,4 +204,9 @@
 .flip {
     transition: all 2s;
     transform: rotateY(360deg);
+}
+
+.achicar {
+    animation-name: achicar;
+    animation-duration: 2s;
 }
