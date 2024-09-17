@@ -1,36 +1,76 @@
-nav {
-    background-color: $grisOscuro;
-    div .logo {
-        margin-right: 25%;
-        height: 100%;
-        font-family: "Mate SC", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 2rem;
-        color: #ffffff;
-        padding-top: .6rem;
-        transition: all 90ms;
-            &:hover {
-                scale: (1.02);
-                color: $beige2;
-                transform: skew(10deg);
-            }
+header {
+    height: 768px;
+    width: 100%;
+    @include flex(column, center, center);
+    background-color: #121001;
+
+    .logo {
+        height: 92%;
+        width: 100%;
+        background-image: url(../../assets/logo.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 
-    div ul {
-        @include flex (row, space-evenly, flex-end);
-            .nav-link{
-                text-align: center;
-                background-color: $beige;
-                margin: 2px 40px;
-                padding: 7px 0px;
-                border-radius: 8px;
-                border: 2px solid $grisOscuro;
-                transition: all 0.5s;
-                box-shadow: 0 0 10px $negro;
-                    &:hover {
-                        background-color: $beige2;
-                    }
+    nav {
+        height: 8%;
+        width: 100%;
+        position: sticky;
+        @include flex(row, space-between, center);
+
+        .navButton {
+            width: 15%;
+            height: 100%;
+            text-align: center;
+            line-height: 63px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: $negro;
+            background-color: #ECE5D5;
+            transition: all 200ms;
+
+            &:hover {
+                color: $blanco;
+                background-color: #25D366;
             }
+        }
+
+        ul {
+            height: 100%;
+            width: 80%;
+            @include flex(row, center, center);
+            gap: 80px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                height: 100%;
+
+                a {
+                    padding: 18px 5px;
+                    text-decoration: none;
+                    color: #ECE5D5;
+                    line-height: 63px;
+                    border-top: 3.5px solid transparent;
+                    transition: all 600ms;
+
+                    &:hover {
+                        color: #CBA030;
+                        border-top: 3.5px solid #CBA030;
+                    }
+                }
+            }
+        }
+
+        #hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #ECE5D5;
+            margin-right: 20px;
+        }
     }
 }
