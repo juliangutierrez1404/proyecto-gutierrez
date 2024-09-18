@@ -20,6 +20,10 @@ header {
         position: sticky;
         @include flex(row, space-between, center);
 
+        .hamburger {
+            display: none;
+        }
+
         .navButton {
             width: 15%;
             height: 100%;
@@ -40,7 +44,9 @@ header {
         ul {
             height: 100%;
             width: 80%;
-            @include flex(row, center, center);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 80px;
             margin: 0;
             padding: 0;
@@ -64,5 +70,12 @@ header {
                 }
             }
         }
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
     }
 }
