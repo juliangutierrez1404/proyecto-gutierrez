@@ -72,3 +72,9 @@ header {
         }
     }
 }
+
+@media (max-width: 768px) {
+    ul {
+        display: none;
+    }
+}
